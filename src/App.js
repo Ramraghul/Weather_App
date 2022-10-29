@@ -12,7 +12,6 @@ function App() {
     <BrowserRouter>
     <WeatherProvider>
     <Routes>
-      {/*Home Page*/}
       <Route path='/' element={<Home/>}/>
     </Routes>
     </WeatherProvider>
