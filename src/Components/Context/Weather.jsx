@@ -23,7 +23,7 @@ export const WeatherProvider = ({ children }) => {
             let detail = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${Rain}&units=metric&appid=ffbfd88caed1d1c95eee16d3a6180cfd`)
             setChange(detail.data)
         } catch (error) {
-            console.log(error);
+            alert("city not found")
         }
     }
     return (

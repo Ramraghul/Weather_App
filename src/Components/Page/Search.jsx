@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import Weather from '../Context/Weather'
 import './Home.css'
 
+
 function Search() {
     const[value,setvalue]=useState("")
     let context =useContext(Weather)

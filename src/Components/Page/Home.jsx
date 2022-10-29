@@ -9,19 +9,20 @@ function Home() {
   let data = getData.change
   const name = getData.change.name;
   const climate = data && data.weather[0].main;
+  const icon = data && data.weather[0].icon;
   const temp = data && data.main.temp;
   const speed = data && data.wind.speed;
-  const humidity = data && data.main.humidity
+  const humidity = data && data.main.humidity;
   
   return (
     <>
-      <div className="card">
+    <div className="card">
         <Search></Search>
         <div className="weather loading">
           <h2 className="city">Weather in {name} </h2>
           <h1 className="temp">{temp}°C</h1>
           <div className="flex">
-            <img src="https://openweathermap.org/img/wn/01n.png" alt="" className="icon" />
+            <img src={`https://openweathermap.org/img/wn/${icon}.png`} alt="" className="icon" />
             <div className="description">{climate}</div>
           </div>
           <div className="humidity">Humidity: {humidity}%</div>
