@@ -16,7 +16,8 @@ function Home() {
   
   return (
     <>
-    <div className="card">
+    <div className='back' style={{backgroundImage:`url('https://source.unsplash.com/1600x1600/?${name}')`}}>
+    <div className="card"  >
         <Search></Search>
         <div className="weather loading">
           <h2 className="city">Weather in {name} </h2>
@@ -29,6 +30,7 @@ function Home() {
           <div className="wind">Wind speed: {speed} km/h</div>
         </div>
       </div>
+    </div>
     </>
   )
 }
