@@ -13,10 +13,12 @@ function Home() {
   const temp = data && data.main.temp;
   const speed = data && data.wind.speed;
   const humidity = data && data.main.humidity;
+
+  // old IMage Url =https://source.unsplash.com/1600x1600/?
   
   return (
     <>
-    <div className='back' style={{backgroundImage:`url('https://source.unsplash.com/1600x1600/?${name}')`}}>
+    <div className='back' style={{backgroundImage:`url('https://picsum.photos/1600/1600?${name}')`}}>
     <div className="card"  >
         <Search></Search>
         <div className="weather loading">
