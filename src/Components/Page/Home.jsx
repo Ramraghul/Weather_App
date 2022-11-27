@@ -18,7 +18,7 @@ function Home() {
   
   return (
     <>
-    <div className='back' style={{backgroundImage:`url('https://picsum.photos/1600/1600?${name}')`}}>
+    <div className='back' style={{backgroundImage:`url('https://picsum.photos/1600/1400?${name}')`}}>
     <div className="card"  >
         <Search></Search>
         <div className="weather loading">
